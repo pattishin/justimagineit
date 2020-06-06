@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-//import { PwaService } from './pwa.service';
 
 @Component({
   selector: 'app-root',
@@ -8,10 +7,4 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'justimagineit';
-
-  /*constructor(private pwaService: PwaService) {}
-
-  installPwa(): void {
-    this.Pwa.promptEvent.prompt();
-  }*/
 }
