@@ -8,7 +8,6 @@ import { MAT_BOTTOM_SHEET_DATA, MatBottomSheetRef } from '@angular/material/bott
 })
 
 export class PromptComponentComponent {
-
   constructor(
     @Inject(MAT_BOTTOM_SHEET_DATA) public data: { mobileType: 'ios' | 'android', promptEvent?: any },
     private bottomSheetRef: MatBottomSheetRef<PromptComponentComponent>
