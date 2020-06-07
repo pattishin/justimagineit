@@ -2,36 +2,40 @@
   <!-- header -->
   <nav>
     <mat-toolbar>
-      <fa-icon [icon]="handRock"></fa-icon>
+      <a routerLink="/" routerLinkActive="active">
+        <fa-icon [icon]="helpingHands"></fa-icon>
+      </a>
       <span>
-        Just Imagine It
+        just imagine it.
       </span>
-      <mat-menu>
-        <button mat-menu-item>Settings</button>
-        <button mat-menu-item>Help</button>
-      </mat-menu>
     </mat-toolbar>
   </nav>
   
-  <!-- routes will be rendered here -->
-  <router-outlet></router-outlet>
-  
-  <mat-grid-list cols="2" rowHeight="2:1">
-    <mat-grid-tile>1</mat-grid-tile>
-    <mat-grid-tile>2</mat-grid-tile>
-    <mat-grid-tile>3</mat-grid-tile>
-    <mat-grid-tile>4</mat-grid-tile>
-  </mat-grid-list>
 
-  <!-- footer -->
-  <footer class="footer">
-    <mat-toolbar>
-      <div class="container">
-        <div class="content has-text-centered">
-          <p>
-            Made with <3 by <a href="https://twitter.com/pattishin">Patti Shin</a>
-          </p>
-        </div>
+  <!-- Body -->
+
+  <main class="mainContent">
+    <div class="navigation">
+      <mat-sidenav-container>
+        <mat-sidenav-content>
+          <a mat-button routerLink="/donate" routerLinkActive="active">Donate</a>
+        </mat-sidenav-content>
+        <mat-sidenav-content>
+          <a mat-button routerLink="/support" routerLinkActive="active">Support</a>
+        </mat-sidenav-content>
+        <mat-sidenav-content>
+          <a mat-button routerLink="/education" routerLinkActive="active">Education</a>
+        </mat-sidenav-content>
+        <mat-sidenav-content>
+          <a mat-button routerLink="/blmfollow" routerLinkActive="active">#blacklivesmatter</a>
+        </mat-sidenav-content>
+      </mat-sidenav-container>
+      <div class="footer">
+        <span>Made with </span><fa-icon [icon]="heart"></fa-icon>
       </div>
-    </mat-toolbar>
-  </footer>
+    </div>
+    <div>
+      <!-- routes will be rendered here -->
+      <router-outlet></router-outlet>
+    </div>
+  </main>

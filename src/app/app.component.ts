@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { faHandRock } from '@fortawesome/free-solid-svg-icons';
+import { faHandsHelping, faHeart } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-root',
@@ -8,5 +8,6 @@ import { faHandRock } from '@fortawesome/free-solid-svg-icons';
 })
 export class AppComponent {
   title = 'justimagineit';
-  handRock = faHandRock;
+  helpingHands = faHandsHelping;
+  heart = faHeart;
 }

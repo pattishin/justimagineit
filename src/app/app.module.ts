@@ -13,17 +13,29 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { MatMenuModule } from '@angular/material/menu';
+import { MatSidenavModule } from '@angular/material/sidenav';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
+import { MainComponent } from './components/main/main.component';
+import { DonateComponent } from './components/donate/donate.component';
+import { SupportComponent } from './components/support/support.component';
+import { EducationComponent } from './components/education/education.component';
+import { SocialMediaFeedComponent } from './components/socialmediafeed/SocialMediaFeed.component';
+
 
 const initializer = (pwaService: PwaService) => () => pwaService.initPwaPrompt();
 
 @NgModule({
   declarations: [
     AppComponent,
-    PromptComponentComponent
+    PromptComponentComponent,
+    DonateComponent,
+    SupportComponent,
+    EducationComponent,
+    MainComponent,
+    SocialMediaFeedComponent
   ],
   imports: [
     AppRoutingModule,
@@ -36,6 +48,7 @@ const initializer = (pwaService: PwaService) => () => pwaService.initPwaPrompt()
     MatCardModule,
     MatButtonModule,
     MatGridListModule,
+    MatSidenavModule,
     FontAwesomeModule,
     ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
   ],
