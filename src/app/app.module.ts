@@ -6,14 +6,8 @@ import { AppComponent } from './app.component';
 import { PromptComponentComponent } from './prompt-component/prompt-component.component';
 import { PwaService } from './services/pwa.service';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatBottomSheetModule } from '@angular/material/bottom-sheet';
-import { MatToolbarModule } from '@angular/material/toolbar';
-import { MatGridListModule } from '@angular/material/grid-list';
-import { MatIconModule } from '@angular/material/icon';
-import { MatCardModule } from '@angular/material/card';
-import { MatButtonModule } from '@angular/material/button';
-import { MatMenuModule } from '@angular/material/menu';
-import { MatSidenavModule } from '@angular/material/sidenav';
+import { MaterialModule } from './material.module';
+
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 import { ServiceWorkerModule } from '@angular/service-worker';
@@ -41,14 +35,7 @@ const initializer = (pwaService: PwaService) => () => pwaService.initPwaPrompt()
     AppRoutingModule,
     BrowserModule,
     BrowserAnimationsModule,
-    MatMenuModule,
-    MatBottomSheetModule,
-    MatToolbarModule,
-    MatIconModule,
-    MatCardModule,
-    MatButtonModule,
-    MatGridListModule,
-    MatSidenavModule,
+    MaterialModule,
     FontAwesomeModule,
     ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
   ],
