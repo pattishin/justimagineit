@@ -20,9 +20,9 @@ import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
 import { MainComponent } from './components/main/main.component';
 import { DonateComponent } from './components/donate/donate.component';
-import { SupportComponent } from './components/support/support.component';
 import { EducationComponent } from './components/education/education.component';
 import { SocialMediaFeedComponent } from './components/socialmediafeed/SocialMediaFeed.component';
+import { ResourceComponent } from './components/resource/resource.component';
 
 
 const initializer = (pwaService: PwaService) => () => pwaService.initPwaPrompt();
@@ -32,10 +32,10 @@ const initializer = (pwaService: PwaService) => () => pwaService.initPwaPrompt()
     AppComponent,
     PromptComponentComponent,
     DonateComponent,
-    SupportComponent,
     EducationComponent,
     MainComponent,
-    SocialMediaFeedComponent
+    SocialMediaFeedComponent,
+    ResourceComponent
   ],
   imports: [
     AppRoutingModule,

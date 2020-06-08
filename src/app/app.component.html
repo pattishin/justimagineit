@@ -1,15 +1,17 @@
 
   <!-- header -->
-  <nav>
+  <div class="header">
     <mat-toolbar>
-      <a routerLink="/" routerLinkActive="active">
-        <fa-icon [icon]="helpingHands"></fa-icon>
-      </a>
+      <div class="headerLogo">
+        <a routerLink="/" routerLinkActive="active">
+          <fa-icon [icon]="helpingHands"></fa-icon>
+        </a>
+      </div>
       <span>
         just imagine it.
       </span>
     </mat-toolbar>
-  </nav>
+  </div>
   
 
   <!-- Body -->
@@ -21,21 +23,23 @@
           <a mat-button routerLink="/donate" routerLinkActive="active">Donate</a>
         </mat-sidenav-content>
         <mat-sidenav-content>
-          <a mat-button routerLink="/support" routerLinkActive="active">Support</a>
+          <a mat-button routerLink="/education" routerLinkActive="active">Education</a>
         </mat-sidenav-content>
         <mat-sidenav-content>
-          <a mat-button routerLink="/education" routerLinkActive="active">Education</a>
+          <a mat-button routerLink="/resources" routerLinkActive="active">Resources</a>
         </mat-sidenav-content>
         <mat-sidenav-content>
           <a mat-button routerLink="/blmfollow" routerLinkActive="active">#blacklivesmatter</a>
         </mat-sidenav-content>
       </mat-sidenav-container>
-      <div class="footer">
+      <div class="navFooter">
         <span>Made with </span><fa-icon [icon]="heart"></fa-icon>
       </div>
     </div>
-    <div>
+    <div class="contentWrapper">
       <!-- routes will be rendered here -->
-      <router-outlet></router-outlet>
+      <div class="routerContent">
+        <router-outlet></router-outlet>
+      </div>
     </div>
   </main>
