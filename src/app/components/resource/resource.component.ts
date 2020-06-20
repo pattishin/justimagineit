@@ -5,11 +5,14 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './resource.component.html',
   styleUrls: ['./resource.component.scss']
 })
-export class ResourceComponent implements OnInit {
 
-  constructor() { }
+/**
+ * ResourceComponent
+ */
+class ResourceComponent implements OnInit {
+  constructor() {}
 
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void {}
 }
+
+export default ResourceComponent;

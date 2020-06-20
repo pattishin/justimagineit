@@ -6,8 +6,14 @@ import { faHandsHelping, faHeart } from '@fortawesome/free-solid-svg-icons';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent {
+
+/**
+ * AppComponent
+ */
+class AppComponent {
   title = 'justimagineit';
   helpingHands = faHandsHelping;
   heart = faHeart;
 }
+
+export default AppComponent;

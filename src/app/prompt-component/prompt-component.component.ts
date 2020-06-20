@@ -7,7 +7,10 @@ import { MAT_BOTTOM_SHEET_DATA, MatBottomSheetRef } from '@angular/material/bott
   styleUrls: ['./prompt-component.component.scss']
 })
 
-export class PromptComponentComponent {
+/**
+ * PromptComponentComponent
+ */
+class PromptComponentComponent {
   constructor(
     @Inject(MAT_BOTTOM_SHEET_DATA) public data: { mobileType: 'ios' | 'android', promptEvent?: any },
     private bottomSheetRef: MatBottomSheetRef<PromptComponentComponent>
@@ -22,3 +25,5 @@ export class PromptComponentComponent {
     this.bottomSheetRef.dismiss();
   }
 }
+
+export default PromptComponentComponent;

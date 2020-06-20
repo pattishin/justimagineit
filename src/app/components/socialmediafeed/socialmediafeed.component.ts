@@ -5,11 +5,14 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './socialmediafeed.component.html',
   styleUrls: ['./socialmediafeed.component.scss']
 })
-export class SocialMediaFeedComponent implements OnInit {
 
-  constructor() { }
+/**
+ * SocialMediaFeedComponet
+ */
+class SocialMediaFeedComponent implements OnInit {
+  constructor() {}
 
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void {}
 }
+
+export default SocialMediaFeedComponent;

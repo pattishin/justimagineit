@@ -1,14 +1,18 @@
 import { Injectable } from '@angular/core';
 import { timer } from 'rxjs';
 import { take } from 'rxjs/operators';
-import { PromptComponentComponent } from '../prompt-component/prompt-component.component';
+import PromptComponentComponent from '../prompt-component/prompt-component.component';
 import { MatBottomSheet } from '@angular/material/bottom-sheet';
 import { Platform } from '@angular/cdk/platform';
 
 @Injectable({
   providedIn: 'root'
 })
-export class PwaService {
+
+/**
+ * PwaService
+ */
+class PwaService {
   private promptEvent: any;
 
   constructor(
@@ -39,3 +43,5 @@ export class PwaService {
       .subscribe(() => this.bottomSheet.open(PromptComponentComponent, { data: { mobileType, promptEvent: this.promptEvent } }));
   }
 }
+
+export default PwaService;

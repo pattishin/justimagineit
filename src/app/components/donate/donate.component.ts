@@ -5,11 +5,14 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './donate.component.html',
   styleUrls: ['./donate.component.scss']
 })
-export class DonateComponent implements OnInit {
 
+/**
+ * DonateComponent
+ */
+class DonateComponent implements OnInit {
   constructor() { }
 
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void { }
 }
+
+export default DonateComponent;
