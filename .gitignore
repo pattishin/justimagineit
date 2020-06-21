@@ -4,8 +4,7 @@
 firebase.json
 
 # Modules
-node_modules/
-
+node_modules
 
 # Temp vim files
 *.swo

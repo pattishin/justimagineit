@@ -1,16 +1,16 @@
 runtime: go111
 
 handlers:
-- url: /api/user
+- url: /api/donations
   script: auto
 
 - url: /favicon.ico
-  static_files: dist/favicon.ico
-  upload: dist/favicon.ico
+  static_files: dist/justimagineit/favicon.ico
+  upload: dist/justimagineit/favicon.ico
 
 - url: /
-  static_files: dist/index.html
-  upload: dist/index.html
+  static_files: dist/justimagineit/index.html
+  upload: dist/justimagineit/index.html
 
 - url: /
   static_dir: dist
